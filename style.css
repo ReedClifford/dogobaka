@@ -1,0 +1,74 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body{
+    color: whitesmoke;
+    background-color: red;
+    font-size: 3rem;
+    text-align: center;
+    
+}
+
+div{
+    height: 65vh;
+    width: 600px;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+    box-shadow: 0 0 1px 2px grey;
+    animation-name: blink;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes blink{
+
+    0%{
+        background-color: greenyellow;
+        transition: 1s;
+        font-size: 1rem;
+        
+    }
+    25%{
+        background-color: orange;
+        transition: 1s;
+        font-size: 2rem;
+        border-radius: 30px;
+    }
+    50%{
+        background-color: red;
+        transition: 1s;
+        font-size: 3rem;
+        border-radius: 60px;
+    }
+    75%{
+        background-color: orangered;
+        transition: 1s;
+        font-size: 4rem;
+        border-radius: 30px;
+    }
+    100%{
+        background-color: greenyellow;
+        transition: 1s;
+        font-size: 5rem;
+        border-radius: 100px;
+        padding: 20px;
+        
+        
+    }
+}
+
+
+div:hover{
+    transform: scale(1.1);
+    transition:  2s;
+    
+}
